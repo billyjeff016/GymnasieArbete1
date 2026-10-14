@@ -1,0 +1,88 @@
+body {
+  background: linear-gradient(90deg, rgb(29, 10, 28), rgb(99, 50, 92), rgb(29, 10, 28));
+  color: white;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: rgb(41, 22, 41);
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+nav ul {
+  display: flex; /* add if you want align-items/justify-content to work */
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  margin: 0;
+}
+
+nav ul li {
+  list-style: none;
+  transition: all 0.3s ease; /* smooth transition for hover effects */
+}
+
+.border {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 6px 10px;
+  background-color: transparent;
+  color: white;
+  font: sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 1000px;
+  width: 750px;
+}
+a {
+  text-decoration: none;
+}
+li button {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px; /* optional: gives the element some size so border is visible */
+  width: 100px;
+  height: 50px;
+  background-color: rgb(41, 22, 41);
+  color: white;
+  font: sans-serif;
+  transition: all 0.3s ease; /* smooth transition for hover effects */
+}
+li button:hover {
+  transform: scale(1.2);
+  background-color: purple;
+  color: white;
+  border: 1px solid transparent;
+  box-shadow: 0 0 15px rgba(246, 244, 247, 0.3);
+}
+.box{
+  width: 97%;
+  height: 90px;
+  background-color: rgb(37, 1, 37);
+  margin: 0 auto;
+}
+.search-button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  image: url('search-icon.png'); /* replace with your search icon image */
+  background-color: transparent;  
+}
+.profile-border{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  image: url('profile-icon.png'); /* replace with your profile icon image */
+  background-color: transparent;  
+}
