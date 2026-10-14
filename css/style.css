@@ -86,3 +86,12 @@ li button:hover {
   image: url('profile-icon.png'); /* replace with your profile icon image */
   background-color: transparent;  
 }
+.login-box{
+border-radius: 0px;
+border: 1px transparent;
+background-color: rgb(36, 23, 48);
+height: 500px;
+width: 600px;
+justify-content: center;
+align-items: center;
+}

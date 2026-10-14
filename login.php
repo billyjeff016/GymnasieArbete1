@@ -1,6 +1,6 @@
 <?php
-require_once 'assets/validate.php';
-require_once 'assets/getdata.php';
+require_once 'Assets/validate.php';
+require_once 'Assets/getdata.php';
 
 
 session_start();
@@ -28,8 +28,10 @@ if (isset($_POST['submit'])) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <script src="script.js"></script>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <section class="Login-box">
         <form method="post" action="">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required><br><br>
@@ -38,5 +40,6 @@ if (isset($_POST['submit'])) {
             <input type="submit" name="submit" value="Logga in">
         </form>
         <a href="signup.php">Har du inget konto? Registrera dig här</a>
+        </section>
     </body>
     </html>
