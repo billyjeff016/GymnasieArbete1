@@ -17,17 +17,15 @@
         <li>
             <a href="profil.php"><button>Profil</button></a>
         </li>
-        <div class="search-container">
-
-    </li>
-        <label for="search">Search:</label>
-        <input type="text" id="search" name="search">
         <li>
-            <a href="searchsite.php">Search Site</a>
+            <div class="search-container">
+                <label for="search">Search:</label>
+                <input type="text" id="search" name="search">
+                <a href="searchsite.php" class="search-button" aria-label="Search"></a>
+            </div>
         </li>
-</div>
         <li>
-            <a href="login.php"><button>Logout</button></a>
+            <a href="login.php"><button>Login</button></a>
         </li>
     </ul>
 </nav>

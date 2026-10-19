@@ -25,15 +25,13 @@ print_r($_SESSION);
         <li>
             <a href="profil.php"><button>Profil</button></a>
         </li>
-        <div class="search-container">
-
-    </li>
-    <li>
-        <label for="search">Search:</label>
-        <input type="text" id="search" name="search">
-        <a href="searchsite.php" class="search-button"></a>
-    </li>
-</div>
+        <li>
+            <div class="search-container">
+                <label for="search">Search:</label>
+                <input type="text" id="search" name="search">
+                 <a href="searchsite.php"><button class="search-button"></button></a>
+            </div>
+        </li>
         <li>
             <a href="login.php"><button>Login</button></a>
         </li>
