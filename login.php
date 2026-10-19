@@ -14,7 +14,7 @@ if (isset($_POST['submit'])) {
         $_SESSION['name'] = $userInfo['name'];
         $_SESSION['email'] = $userInfo['email'];
         $_SESSION['password'] = $_POST['password'];
-        header("Location: index.php");
+       // header("Location: index.php");
         exit();
     } else {
         echo "Felaktigt användarnamn eller lösenord.";

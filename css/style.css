@@ -74,7 +74,7 @@ li button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  image: url('search-icon.png'); /* replace with your search icon image */
+  image:('searchicon-redigerad.jpg'); /* replace with your search icon image */
   background-color: transparent;  
 }
 .profile-border{

@@ -1,6 +1,6 @@
 <?php
-require_once 'assets/validate.php';
-require_once 'assets/getdata.php';
+//require_once 'assets/validate.php';
+//require_once 'assets/getdata.php';
 session_start();
 print_r($_SESSION);
 ?>
@@ -31,7 +31,7 @@ print_r($_SESSION);
     <li>
         <label for="search">Search:</label>
         <input type="text" id="search" name="search">
-        <a href="searchsite.php"><button class="search-button"></button></a>
+        <a href="searchsite.php" class="search-button"></a>
     </li>
 </div>
         <li>
