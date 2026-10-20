@@ -1,6 +1,6 @@
 <?php
 
-require_once 'Assets/connection.php';
+require_once  'connection.php';
 
 function insertForumpost($username, $message) {
     $sql = "insert into forum (username, message) values (:username, :msg)";
@@ -20,7 +20,7 @@ function insertForumpost($username, $message) {
 }
 
 function getForumPosts() {
-    $sql = "select * from forum order by time desc";
+    $sql = "select * from GymnasieArbete order by time desc";
 
     global $GymnasieArbete;
     $stmt = $GymnasieArbete->prepare($sql);
@@ -33,7 +33,7 @@ function searchMessages($search) {
     $sql = "SELECT * FROM GymnasieArbete
         WHERE username = :search
             ORDER BY time DESC";
-    $stmt = $forum->prepare($sql);
+    $stmt = $GymnasieArbete->prepare($sql);
     $stmt->bindValue(':search', $search);
     $stmt->execute();
     return $stmt;
@@ -52,7 +52,7 @@ function login($username, $password) {
 function getUserInfo($username) {
     global $GymnasieArbete;
     $sql = "SELECT * FROM user WHERE username = :username";
-    $stmt = $forum->prepare($sql);
+    $stmt = $GymnasieArbete->prepare($sql);
     $stmt->bindValue(':username', $username);
     $stmt->execute();
     return $stmt->fetch(PDO::FETCH_ASSOC);
