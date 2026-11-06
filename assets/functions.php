@@ -49,7 +49,7 @@ function login($username, $password) {
 
     return $user && password_verify($password, $user['password']);
 }
-function getUserInfo($username) {
+    function getUserInfo($username) {
     global $GymnasieArbete;
     $sql = "SELECT * FROM user WHERE username = :username";
     $stmt = $GymnasieArbete->prepare($sql);

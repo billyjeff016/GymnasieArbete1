@@ -1,10 +1,10 @@
 <?php
-require_once 'assets/getdata.php';
+require_once 'assets/functions.php';
 
 
 session_start();
 //$errors = array();
-if (isset($_POST['submit'])) {
+/*if (isset($_POST['submit'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
     if(login($username, $password)) {
@@ -18,7 +18,7 @@ if (isset($_POST['submit'])) {
     } else {
         echo "Felaktigt användarnamn eller lösenord.";
     }
-    }
+    }*/
     ?>
     <!DOCTYPE html>
     <html lang="sv">
@@ -27,18 +27,20 @@ if (isset($_POST['submit'])) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <script src="script.js"></script>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css?v=2">
     </head>
     <body class="login-page">
-        <section class="login-box">
+        
+    <section class="login-box">
         <form method="post" action="">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required><br><br>
             <label for="password">Lösenord:</label>
             <input type="password" id="password" name="password" required><br><br>
             <input type="submit" name="submit" value="Logga in">
+            <a href="signup.php">Har du inget konto? Registrera dig här</a>
         </form>
-        <a href="signup.php">Har du inget konto? Registrera dig här</a>
+    
         </section>
     </body>
     </html>
